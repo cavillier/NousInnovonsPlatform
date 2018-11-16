@@ -2148,7 +2148,6 @@ html, body {
 
 .bjs-powered-by{
 	top: calc(100% - 80px);
-	z-index: 0 !important;
 }
 
 	.smallicons{
