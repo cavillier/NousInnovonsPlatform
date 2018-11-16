@@ -1,5 +1,5 @@
 # NousInnovonsPlatform
-NousInnovons.ch platform is an on-going research led at EPFL aiming to improve collaboration betweens students and small-and-medium sized enterprises (SMEs).
+NousInnovons.ch platform is an on-going research from EPFL aiming to improve collaboration betweens students and small-and-medium sized enterprises (SMEs).
 
 By following the steps below, you will be able to lunch your own prototype of a platform to supervise collaborative projects between small firms and students on process innovation.
 
