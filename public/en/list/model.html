@@ -1,0 +1,199 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Model</title>
+
+    <!-- Web chat stuff -->
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+ <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/fav/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/fav/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/fav/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+
+
+ <!-- App Styling  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+   <link rel="stylesheet" href="/styles/orange-indigo.css">
+       <!-- Latest compiled and minified CSS -->
+<link href="/styles/bootstrap.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="/scripts/bpmn-js/dist/assets/diagram-js.css">
+  <link rel="stylesheet" href="/scripts/bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css">
+
+  <link rel="stylesheet" href="/styles/animate.css">
+   <link rel="stylesheet" href="/styles/list.css">
+
+
+
+
+</head>
+
+<!-- Body -->
+
+<body>
+
+
+<div  id="wrapper-model">
+  <!-- Header section containing logo -->
+<div  id="header">
+
+		 <!-- logo -->
+		 <div id="divLogo">
+		 <div id="big-circle-logo" class="circle-logo"></div>
+		 <div id="medium-circle-logo" class="circle-logo"></div>
+		 <div id="small-circle-logo" class="circle-logo"></div>
+		  <div id="line1-logo" class="line-logo"></div>
+		  <div id="line2-logo" class="line-logo"></div>
+		  <div id="line3-logo" class="line-logo"></div>
+			<div id="arrow-logo"></div>
+
+		 </div>
+
+		 <!-- Buttons -->
+   <div id="divTitle"><input type="text" value=""/></div>
+
+
+        <div id="username"></div>
+
+        <button id="btnLogout" class="btnsLog btn-auth mdl-button">
+         <i class="material-icons">exit_to_app</i>
+        </button>
+
+
+
+  </div>
+
+
+
+
+
+<div id="divSettings" >
+  <button id="btnList" class="bstooltip mdl-button">
+   <i class="material-icons">menu</i>
+  </button>
+  <button id="btnMembers" class="bstooltip mdl-button">
+   <i class="material-icons">group</i>
+  </button>
+<div id="divSubSettings">
+	<button id="btnNo" class="bstooltip mdl-button">
+	<i class="material-icons">clear</i>
+	</button>
+	<button id="btnEdit" class="bstooltip mdl-button">
+	<i class="material-icons">create</i>
+	</button>
+	<button id="btnYes" class="bstooltip mdl-button">
+	<i class="material-icons">done</i>
+	</button>
+</div>
+<button id="btnOpenColor" class="bstooltip mdl-button">
+<i class="material-icons">color_lens</i>
+</button>
+</div>
+<div id="divTitleModel" >
+</div>
+<div id="drawingspace">
+<div id="canvas" ></div>
+</div>
+<div id="canvas-saved" ></div>
+
+
+
+</div>
+
+
+
+
+<!--Fin Panels  -->
+
+
+
+
+
+
+
+<!--Modal  -->
+
+
+
+
+<!-- Loader -->
+<div id="divLoader">
+	  	 <div id="divLogo2">
+		 <div id="big-circle-logo" class="circle-logo animated infinite bounceInLeft"></div>
+		 <div id="medium-circle-logo" class="circle-logo animated infinite bounceInRight"></div>
+		 <div id="small-circle-logo" class="circle-logo animated infinite bounceInUp"></div>
+		  <div id="line1-logo" class="line-logo animated infinite bounceInUp"></div>
+		  <div id="line2-logo" class="line-logo animated infinite bounceInUp"></div>
+		  <div id="line3-logo" class="line-logo animated infinite bounceInUp"></div>
+			<div id="arrow-logo" class="animated infinite bounceInRight"></div>
+		 </div>
+</div>
+
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script src="/scripts/fb.js"></script>
+<script src="/scripts/members.js"></script>
+  <!-- Bootstrap -->
+
+<script src="/scripts/bootstrap.js"></script>
+
+<script src="/scripts/swal2.js"></script>
+
+<!-- BPM Modeler -->
+ <script src="/scripts/bpmn-js/dist/bpmn-modeler.js"></script>
+
+
+<script type="text/javascript" src="/scripts/model.js"></script>
+
+
+
+</body>
+</html>

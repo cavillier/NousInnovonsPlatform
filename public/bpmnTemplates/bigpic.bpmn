@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:task id="Task_1npfx1t" name="connaissances internes et externes">
+      <bpmn:outgoing>SequenceFlow_1iw3rxt</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:subProcess id="SubProcess_01u579r" name="Comprendre, apprendre et appliquer une nouvelle solution : &#10;REMPLACER CE TEXTE POUR LE NOM DE LA SOLUTION et une courte description">
+      <bpmn:incoming>SequenceFlow_1iw3rxt</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_1bsa153</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_1qqsvsh</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_1cd4rqb</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_1k4umse</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0vpeufa</bpmn:outgoing>
+    </bpmn:subProcess>
+    <bpmn:sequenceFlow id="SequenceFlow_1iw3rxt" sourceRef="Task_1npfx1t" targetRef="SubProcess_01u579r" />
+    <bpmn:task id="Task_1w9wn4e" name="relations d&#39;apprentissages">
+      <bpmn:outgoing>SequenceFlow_1bsa153</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1bsa153" sourceRef="Task_1w9wn4e" targetRef="SubProcess_01u579r" />
+    <bpmn:task id="Task_0awriq7" name="Représentation mentale des collaborateurs">
+      <bpmn:outgoing>SequenceFlow_1cd4rqb</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_15wgeqk" name="Processus et structure">
+      <bpmn:outgoing>SequenceFlow_1k4umse</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_02ddznz" name="Gains ">
+      <bpmn:incoming>SequenceFlow_0vpeufa</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:task id="Task_0d590uq" name="Stratégie de l&#39;entreprise">
+      <bpmn:outgoing>SequenceFlow_1qqsvsh</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_0vpeufa" sourceRef="SubProcess_01u579r" targetRef="Task_02ddznz" />
+    <bpmn:sequenceFlow id="SequenceFlow_1qqsvsh" sourceRef="Task_0d590uq" targetRef="SubProcess_01u579r" />
+    <bpmn:sequenceFlow id="SequenceFlow_1cd4rqb" sourceRef="Task_0awriq7" targetRef="SubProcess_01u579r" />
+    <bpmn:sequenceFlow id="SequenceFlow_1k4umse" sourceRef="Task_15wgeqk" targetRef="SubProcess_01u579r" />
+    <bpmn:textAnnotation id="TextAnnotation_0omtt0c">
+      <bpmn:text><![CDATA[Les collaborateurs travaillent souvent ensemble avec les mêmes outils? Ont-ils souvent besoin de s'entraider ? Qu'est ce qui pourrait agir comme barrière au niveau de l'entraide entre collaborateurs pour apprendre à utiliser la solution? Vont-ils souvent communiquer?]]></bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0ob474c" sourceRef="Task_1w9wn4e" targetRef="TextAnnotation_0omtt0c" />
+    <bpmn:textAnnotation id="TextAnnotation_1qor46o">
+      <bpmn:text><![CDATA[Est-ce que les collaborateurs utilisent déjà des systèmes similaires? Est-ce qu'ils sont à l'aise avec des nouvelles technologies? Qu'est ce qui pourrait agir comme barrière au niveau des connaissances pour prendre en main la solution ?]]></bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1hnoyzo" sourceRef="Task_1npfx1t" targetRef="TextAnnotation_1qor46o" />
+    <bpmn:textAnnotation id="TextAnnotation_0u3dybd">
+      <bpmn:text><![CDATA[Comment est-ce qu'un échec / erreur est perçu ?
+Est-ce que les employées se sentent en confiance pour critiquer la solution si besoin?
+Est-ce que la manière de travailler, les indicateurs de performances correspondent aux gains amenés par la solution?]]></bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1fno28b" sourceRef="Task_0d590uq" targetRef="TextAnnotation_0u3dybd" />
+    <bpmn:textAnnotation id="TextAnnotation_1fbc155">
+      <bpmn:text> Quels sont les gains liés à la solutions?</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_00qe11d" sourceRef="Task_02ddznz" targetRef="TextAnnotation_1fbc155" />
+    <bpmn:textAnnotation id="TextAnnotation_1m2fy83">
+      <bpmn:text>Comment est-ce que les collaborateurs perçoivent la solution? Est-ce que les valeurs / avantages que la solution amène est important pour eux?</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_15fgbe2" sourceRef="Task_0awriq7" targetRef="TextAnnotation_1m2fy83" />
+    <bpmn:textAnnotation id="TextAnnotation_1px11gz">
+      <bpmn:text><![CDATA[A quel point la solution change la manière de travailler (le processus) ou la structure de l'entreprise?]]></bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1a1cnfo" sourceRef="Task_15wgeqk" targetRef="TextAnnotation_1px11gz" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="Task_1npfx1t_di" bpmnElement="Task_1npfx1t">
+        <dc:Bounds x="292" y="154" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="SubProcess_01u579r_di" bpmnElement="SubProcess_01u579r" isExpanded="true">
+        <dc:Bounds x="493" y="220" width="218" height="120" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1iw3rxt_di" bpmnElement="SequenceFlow_1iw3rxt">
+        <di:waypoint x="392" y="194" />
+        <di:waypoint x="431" y="194" />
+        <di:waypoint x="431" y="280" />
+        <di:waypoint x="493" y="280" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="446" y="231" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_1w9wn4e_di" bpmnElement="Task_1w9wn4e">
+        <dc:Bounds x="292" y="324" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1bsa153_di" bpmnElement="SequenceFlow_1bsa153">
+        <di:waypoint x="392" y="364" />
+        <di:waypoint x="431" y="364" />
+        <di:waypoint x="431" y="280" />
+        <di:waypoint x="493" y="280" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="446" y="316" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0awriq7_di" bpmnElement="Task_0awriq7">
+        <dc:Bounds x="470" y="62" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_15wgeqk_di" bpmnElement="Task_15wgeqk">
+        <dc:Bounds x="632" y="62" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_02ddznz_di" bpmnElement="Task_02ddznz">
+        <dc:Bounds x="784" y="240" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0d590uq_di" bpmnElement="Task_0d590uq">
+        <dc:Bounds x="552" y="396.22645290581164" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0vpeufa_di" bpmnElement="SequenceFlow_0vpeufa">
+        <di:waypoint x="711" y="280" />
+        <di:waypoint x="784" y="280" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="702.5" y="259" width="90" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1qqsvsh_di" bpmnElement="SequenceFlow_1qqsvsh">
+        <di:waypoint x="602" y="396" />
+        <di:waypoint x="602" y="369" />
+        <di:waypoint x="602" y="369" />
+        <di:waypoint x="602" y="340" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="617" y="363" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1cd4rqb_di" bpmnElement="SequenceFlow_1cd4rqb">
+        <di:waypoint x="520" y="142" />
+        <di:waypoint x="520" y="181" />
+        <di:waypoint x="602" y="181" />
+        <di:waypoint x="602" y="220" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="561" y="160" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1k4umse_di" bpmnElement="SequenceFlow_1k4umse">
+        <di:waypoint x="682" y="142" />
+        <di:waypoint x="682" y="181" />
+        <di:waypoint x="602" y="181" />
+        <di:waypoint x="602" y="220" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="642" y="160" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0omtt0c_di" bpmnElement="TextAnnotation_0omtt0c">
+        <dc:Bounds x="232" y="442" width="219.17052307480898" height="124.56747404844292" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0ob474c_di" bpmnElement="Association_0ob474c">
+        <di:waypoint x="342" y="404" />
+        <di:waypoint x="342" y="442" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1qor46o_di" bpmnElement="TextAnnotation_1qor46o">
+        <dc:Bounds x="216" y="35" width="251.9944310875775" height="96.88581314878893" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1hnoyzo_di" bpmnElement="Association_1hnoyzo">
+        <di:waypoint x="342" y="154" />
+        <di:waypoint x="342" y="132" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0u3dybd_di" bpmnElement="TextAnnotation_0u3dybd">
+        <dc:Bounds x="455" y="510" width="293.76922924213346" height="96.88581314878893" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1fno28b_di" bpmnElement="Association_1fno28b">
+        <di:waypoint x="602" y="476" />
+        <di:waypoint x="602" y="510" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1fbc155_di" bpmnElement="TextAnnotation_1fbc155">
+        <dc:Bounds x="951" y="252" width="99.99760294455558" height="55.36332179930796" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_00qe11d_di" bpmnElement="Association_00qe11d">
+        <di:waypoint x="884" y="281" />
+        <di:waypoint x="951" y="279" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1m2fy83_di" bpmnElement="TextAnnotation_1m2fy83">
+        <dc:Bounds x="435" y="-98" width="169" height="104" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_15fgbe2_di" bpmnElement="Association_15fgbe2">
+        <di:waypoint x="520" y="62" />
+        <di:waypoint x="520" y="6" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1px11gz_di" bpmnElement="TextAnnotation_1px11gz">
+        <dc:Bounds x="601" y="-83" width="162" height="74" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1a1cnfo_di" bpmnElement="Association_1a1cnfo">
+        <di:waypoint x="682" y="62" />
+        <di:waypoint x="683" y="-9" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

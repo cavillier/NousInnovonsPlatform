@@ -1,0 +1,47 @@
+{
+"rules": {
+    "list":{
+      ".read": "true",
+        "projects":{
+               "$id":{
+               ".write": "(newData.exists() && !data.exists()) || root.child('list/projects').child($id).child('members').child(auth.uid).exists()"
+             }
+          },
+
+          "models":{
+            "state":{
+              	 "$id":{
+             				".write": "root.child('list/projects').child($id).child('members').child(auth.uid).exists()"
+           				}
+            	},
+              "versions":{
+              	 "$id":{
+             				".write": "root.child('list/projects').child($id).child('members').child(auth.uid).exists()"
+           				}
+            	}
+
+        	},
+
+          "emails":{
+            ".read": "false",
+               "$email":{
+              	".read": "true",
+               	".write": "newData.val() === auth.uid && !data.exists()"
+             }
+          },
+
+          "prototypes":{
+               "$id":{
+                	".write": "root.child('list/projects').child($id).child('members').child(auth.uid).exists()"
+             }
+          },
+
+           "users":{
+               "$uid":{
+                	".write": "auth.uid === $uid"
+             }
+          }
+
+    }
+  }
+}

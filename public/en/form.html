@@ -1,0 +1,218 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Form</title>
+
+    <!-- Web chat stuff -->
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+ <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/fav/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/fav/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/fav/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="NousInnovons">
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="NousInnovons">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+
+
+ <!-- App Styling  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+<link href="/styles/bootstrap.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="/styles/list.css">
+
+
+
+
+</head>
+
+<!-- Body -->
+
+<body>
+
+
+<div  id="wrapper-form" class="form">
+  <!-- Header section containing logo -->
+<div  id="header">
+
+		 <!-- logo -->
+		 <div id="divLogo">
+		 <div id="big-circle-logo" class="circle-logo"></div>
+		 <div id="medium-circle-logo" class="circle-logo"></div>
+		 <div id="small-circle-logo" class="circle-logo"></div>
+		  <div id="line1-logo" class="line-logo"></div>
+		  <div id="line2-logo" class="line-logo"></div>
+		  <div id="line3-logo" class="line-logo"></div>
+			<div id="arrow-logo"></div>
+
+		 </div>
+
+		 <!-- Buttons -->
+   <div id="divTitle">Submit a new project</div>
+        <div id="username"></div>
+		<button id="btnLogout" class="btnsLog mdl-button">
+         <i class="material-icons">exit_to_app</i>
+        </button>
+ </div>
+
+<!-- Main-Table -->
+<div id="main-table">
+<h2 class="color-in-blue">Welcome!</h2>
+
+
+
+<p>This form allows us to understand your need. It can describe <b>a research for an optimisation, a need to better understand a technology, or simply a demand for an external feedback </b> about a potential innovation.
+<br><br>The main goal of this platform is to create an environement fostering brainstorming around innovation of tasks or services. We do not implement solutions, we only help you to define potential ones.
+<br><br><b>Submit your project and getting support from our students is free.</b> They are participating in this research for a semester project in Management.
+They will work on your project from Mars to May or from October to December.
+<br><br><b>For companies, we ask a minimal engagement of 45 minutes per week for getting interviewed (through video-conferences) by the student during 2 months.
+<br><br>If a question seems unclear or irrelevant, you can skip it.
+<br><span class="color-in-red">Be sure that no confidential information are disclosed as your answers will be used to present your project to our students. Your email remains confidential </span>
+<br><br>
+</p>
+
+
+
+<div id="description">
+
+
+    <h3 class="color-in-green center">Account information</h3>
+    <div id="accountInfo">
+ <h4 class="center color-in-blue">What is your email (<span class="color-in-red">confidential</span>)? </h4>
+
+<p class="center"><input data-index="1" id="email" type="email" name="email" autocomplete="on" placeholder="email"></p>
+<h4 class="center color-in-blue">Define a password (<span class="color-in-red">confidential</span>)? </h4>
+<p class="center"><input data-index="0" id="password" type="password" name="password" placeholder="password"></p>
+</div>
+
+  <h3 class="color-in-green center">Questions about your organisation</h3>
+ <h4 class="color-in-blue">1/10. Describe your business and the sector in which it operates in? What are your services or products? Who are your clients?</h4>
+<textarea data-index="2" id="companyText"  placeholder="Describe your company here..." >
+</textarea>
+<h4 class="color-in-blue">2/10. How many employees are working in your company?</h4>
+<p class="center"><input data-index="3" type="number" name="quantity" min="10"></p>
+ <h4 class="color-in-blue">3/10. What is the structure of your company? How many departements/teams do you have? Are you working alone or in team? How important is hierarchy? etc... </h4>
+<textarea data-index="4" id="structureText"  placeholder="Describe your structure here..." >
+</textarea>
+ <h4 class="color-in-blue">4/10. What is the main strategy of your company? What sets you apart from the competition?</h4>
+<textarea data-index="6" id="strategieText"  placeholder="Explain your main value here..." >
+</textarea>
+
+<h3 class="color-in-green center">Questions about the project</h3>
+<h4 class="color-in-blue">5/10. This question should describe the main goal of your project. What are your expectations? Do you want to optimize or digitalize a task or service?</h4>
+<textarea class="bigarea" data-index="7" id="taskText"  placeholder="E.g. We are dealing with a lot of clients requests. Often, our technicians lost a lot of time because of a lack of information from clients." >
+</textarea>
+<h4 class="color-in-blue">6/10. Can you describe people involved in the service or task? What is important for them? What do they feel as painful or boring?</h4>
+<textarea class="bigarea" data-index="10" id="involveText"  placeholder="Please, characterize feelings and motivations of people involved in the task or service to change..." >
+</textarea>
+<h4 class="color-in-blue">7/10. How many ressources are spent on this task/service? The time spent by week? The number of emails?</h4>
+<textarea class="bigarea" data-index="12" id="timeText"  placeholder="
+For example: 12 hours for 50 emails per week, 5 hours for 5 new project per week,
+1 hour to estimate potential benefits and analyse current availability of ressources..." >
+</textarea>
+ <h4 class="color-in-blue">8/10. What is your position? What do you think will be the main challenge to adopt this project in your organisation?</h4>
+<textarea data-index="5" id="motivationText"  placeholder="Please, tell us a bit about you and your motivations to participate" >
+</textarea>
+<h4 class="color-in-blue">9/10. To conclude this interview, we aks you to tell us an anecdote (a story). Something highlighting the issue with the task or service.</h4>
+<textarea data-index="13" id="anecdoteText"  placeholder="E.g. One time, we didn't see that a validation was needed for a new big project and we miss the deal..." >
+</textarea>
+<h4 class="color-in-blue">10/10. Any remark or comment helping us to understand your case?</h4>
+<textarea data-index="14" id="commentText"  placeholder="Any comment?" >
+</textarea>
+<h4 class="center color-in-blue">Give a name to your project</h4>
+<p class="center"><input data-index="15" type="text" name="projectname" placeholder="E.g. Clients management"></p>
+</textarea>
+
+<br><br>
+<h4 class="color-in-red">Terms and Conditions</h4>
+	<ul class="conditions">
+	<li>Conversations with students registered in your project are confidential.</li>
+	  <li>I agree that information and behaviors are record in an anonymous way for an Academic research.</li>
+		<li>Videos and models made by students are open access to foster knowledge sharing on the platform.</li>
+		<li>I allocate enough time (max 30 mins per week) to answer students questions and evaluate their solutions. Students are working 6 hours/week on the project.</li>
+		<li>I agree that all information posted on the platform are not confidential and can be disclosed. Only emails remain confidential.</li>
+		<li>I agree that students are not responsible for problems encountered while implementing or using solutions presented on the platform.</li>
+		<li>Opinions and suggestions are made by students and can not be held responsible for them.</li>
+	</ul>
+<br>
+<div class="containerCheckBoxes">
+<div class="termsBox v-align"><div><input id="checkBox" type="checkbox"></div><div class=""> I agree to the Terms <br>and Conditions.</div></div>
+<br>
+
+</div>
+<br><p class="center"><button class="btnPublish btn btn-lg btn-success">Save my answers and submit the project</button></p><br>
+<p>
+
+
+
+</div>
+
+
+<!-- Loader -->
+<div id="divLoader">
+	  	 <div id="divLogo2">
+		 <div id="big-circle-logo" class="circle-logo animated infinite bounceInLeft"></div>
+		 <div id="medium-circle-logo" class="circle-logo animated infinite bounceInRight"></div>
+		 <div id="small-circle-logo" class="circle-logo animated infinite bounceInUp"></div>
+		  <div id="line1-logo" class="line-logo animated infinite bounceInUp"></div>
+		  <div id="line2-logo" class="line-logo animated infinite bounceInUp"></div>
+		  <div id="line3-logo" class="line-logo animated infinite bounceInUp"></div>
+			<div id="arrow-logo" class="animated infinite bounceInRight"></div>
+		 </div>
+</div>
+
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+
+ <link rel="stylesheet" href="/styles/animate.css">
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script src="/scripts/fb.js"></script>
+
+  <!-- Bootstrap -->
+<script src="/scripts/bootstrap.js"></script>
+
+<script type="text/javascript" src="/scripts/form.js"></script>
+
+</body>
+</html>
