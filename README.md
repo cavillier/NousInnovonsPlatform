@@ -11,18 +11,18 @@ Voilà, I hope you will find my research usefull and I invite you to visit the o
 
 See below the steps to launch your own platform on Firebase.
 
-Prerequisites:
+A) Prerequisites:
 
 0.a Create a firebase account : https://www.firebase.com/signup/
 
 0.b install Node.js and npm, then install firebase tools with the command : "npm install -g firebase-tools"
 
 
-Set up the platform on Firebase:
+B) Set up the platform on Firebase:
 
 1. Add a new project on Firebase : https://console.firebase.google.com/
 
-2. Enable Email/Password sign-in method in the Authentication
+2. Enable Email/Password sign-in method in the Authentification settings
 
 3. In Project Overview, copy paste your project's credentials for a web app (see below an example) :
 
@@ -36,7 +36,7 @@ Set up the platform on Firebase:
         };
         firebase.initializeApp(config);
 
-Upload the code from your computer on firebae:
+C) Upload the code from your computer on firebae:
 
 4. Create a directory for your platform
 
