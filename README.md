@@ -24,7 +24,7 @@ B) Set up the platform on Firebase:
 
 2. Enable Email/Password sign-in method in the Authentification settings
 
-3. In Project Overview, copy paste your project's credentials for a web app (see below an example) :
+3. In Project Overview, copy and save it in a text file your project's credentials for a web app (see below an example) :
 
         var config = {
           apiKey: "YourApiKey",
@@ -38,13 +38,13 @@ B) Set up the platform on Firebase:
 
 C) Upload the code from your computer on firebae:
 
-4. Create a directory for your platform
+4. Create a directory on your computer for your platform
 
-5. In your terminal, go to your platform's directory and link it to firebase with : "firebase init"
+5. In your terminal, go to your local platform's directory and link it to firebase with : "firebase init"
 
 6. Choose to set up the following features : Database, Hosting, Storage. Then, confirm all other requests.
 
-7. Once the set up completed, go to your directory and copy paste the "public" folder, the "database.rules" and "storage.rules" files.
+7. Once the set up completed, go to your directory folder and copy paste the "public" folder, the "database.rules" and "storage.rules" files.
 
 8. Open the file fb.js at "your directory/public/scripts/fb.js" and copy paste your project's credentials (see point 3).
 
