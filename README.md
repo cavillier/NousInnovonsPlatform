@@ -57,5 +57,5 @@ I would really appreciate if you can let me know how you plan to use the platfor
 Cheers, 
 Quentin
 
-#License
+# License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
