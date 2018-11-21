@@ -50,7 +50,9 @@ C) Upload the code from your computer on firebae:
 
 9. Finally, go back to your project's directory from your terminal and enter : "firebase deploy".
 
-10. Et voilà, you should be able to play with your platform at the address : "YourPlatform.firebaseapp.com"
+10. Et voilà, you should be able to play with your platform prototype at the address : "YourPlatform.firebaseapp.com"
+
+11. P.S. Security rules about database and storage should be changed if you want to scale it up to many projects.
 
 Cheers, 
 Quentin
