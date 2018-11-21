@@ -52,8 +52,6 @@ C) Upload the code from your computer on firebae:
 
 10. Et voilà, you should be able to play with your platform at the address : "YourPlatform.firebaseapp.com"
 
-I would really appreciate if you can let me know how you plan to use the platform for personal curiosity. 
-
 Cheers, 
 Quentin
 
