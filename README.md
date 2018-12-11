@@ -24,7 +24,7 @@ B) Set up the platform on Firebase:
 
 2. Enable Email/Password sign-in method in the Authentification settings
 
-3. In Project Overview, copy and save it in a text file your project's credentials for a web app (see below an example) :
+3. In Project Overview, copy and save your project's credentials for a web app in a text file (see below an example) :
 
         var config = {
           apiKey: "YourApiKey",
