@@ -15,16 +15,16 @@ A) Prerequisites:
 
 0.a Create a firebase account : https://www.firebase.com/signup/
 
-0.b install Node.js and npm, then install firebase tools with the command : "npm install -g firebase-tools"
+0.b install Node.js and npm (https://nodejs.org/en/download), then install firebase tools from your terminal with the command : "npm install -g firebase-tools"
 
 
 B) Set up the platform on Firebase:
 
 1. Add a new project on Firebase : https://console.firebase.google.com/
 
-2. Enable Email/Password sign-in method in the Authentification settings
+2. Enable Email/Password sign-in method in the Authentification settings of your console's project. The url should look like something similar : [](console.firebase.google.com/project/Your Project Id/authentication/providers)
 
-3. In Project Overview, copy and save your project's credentials for a web app in a text file (see below an example) :
+3. In Project Overview, click on "Add app", copy and save your project's credentials for a web app in a text file (see below an example) :
 
         var config = {
           apiKey: "YourApiKey",
@@ -38,13 +38,15 @@ B) Set up the platform on Firebase:
 
 C) Upload the code from your computer on firebae:
 
-4. Create a directory on your computer for your platform
+4. Create a folder on your computer for your platform
 
-5. In your terminal, go to your local platform's directory and link it to firebase with : "firebase init"
+5. In your terminal, set the directory to your platform's folder and link it to firebase with : "firebase init"
 
-6. Choose to set up the following features : Database, Hosting, Storage. Then, confirm all other requests.
+6. Set the initialization with the following features : Database, Hosting, Storage. 
 
-7. Once the set up completed, go to your directory folder and copy paste the "public" folder, the "database.rules" and "storage.rules" files.
+7. Download the platform's code from Github.
+
+7. Once the set up completed, go to your project's folder and copy/paste the "public" folder, the "database.rules" and "storage.rules" files with those from the folder downloaded.
 
 8. Open the file fb.js at "your directory/public/scripts/fb.js" and copy paste your project's credentials (see point 3).
 
