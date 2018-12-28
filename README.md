@@ -7,7 +7,7 @@ The main purpose of the platform is to build up the SMEs' awareness about opport
 
 Therefore, I believe Universities should lead similar initiatives to enhance collaboration between students and small firm. Using this platform has a few benefits such as centralizing data that can be easily reused and shared amongst students. We can also start thinking about using those data for computer science researches (e.g. How to improve students soft and analytical skills with machine learning?). It also offers an easy way for small firms to offer projects and see what the others have done. Finally, for the supervisor (myself during my research), it allows to coach and to follow up many (10-20) projects in a semester.
 
-I hope you will find my research usefull and I invite you to visit the original platform at https://www.nousinnovons.ch to get a better idea of what we did.
+I hope you will find my research usefull and I invite you to visit the original platform at https://www.nousinnovons.ch to grasp a better idea of what we did.
 
 See below the steps to launch your own platform on Firebase.
 
